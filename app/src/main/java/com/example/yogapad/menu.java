@@ -15,18 +15,18 @@ public class menu extends AppCompatActivity {
     }
 
     public void viewFunds (View view){
-        Intent intent_funds = new Intent(this, fundaments.class);
+        Intent intent_funds = new Intent(this, funds.class);
         startActivity(intent_funds);
     }
 
-    public void viewPassivos (View view){
-        Intent intent_passivos = new Intent(this, passivos.class);
-        startActivity(intent_passivos);
+    public void viewPassive (View view){
+        Intent intent_passive = new Intent(this, passive.class);
+        startActivity(intent_passive);
     }
 
-    public void viewAtivos (View view){
-        Intent intent_passivos = new Intent(this, ativos.class);
-        startActivity(intent_passivos);
+    public void viewActive (View view){
+        Intent intent_active = new Intent(this, active.class);
+        startActivity(intent_active);
     }
 
     public void viewPractice (View view){
