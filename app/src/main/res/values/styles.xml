@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="DefaultBtn" parent="TextAppearance.AppCompat.Button">
-        <item name="backgroundTint">#B4CC7F</item>
+        <item name="backgroundTint">#DF5E35</item>
         <item name="android:layout_width">240dp</item>
         <item name="android:layout_height">130dp</item>
-        <item name="android:textSize">34sp</item>
+        <item name="android:textSize">25sp</item>
         <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">12dp</item>
     </style>
 
-    <style name="DefaultTit" parent="TextAppearance.AppCompat">
+    <style name="DefaultTxt" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30dp</item>
     </style>
+
+    <style name="TitleTxt" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF"</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 
 </resources>

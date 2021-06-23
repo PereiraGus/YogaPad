@@ -7,15 +7,35 @@
     <string name="descBack">Voltar</string>
     <string name="descProf">Perfil</string>
     <string name="descHelp">Ajuda</string>
+    <string name="descProfPt">Foto de perfil</string>
 
 
     //Texto de botões
     <string name="btnStart">Começar</string>
 
     <string name="btnMenuI1">Fundamentos da Yoga</string>
-    <string name="btnMenuI2">Desenvolvimento da Calma</string>
-    <string name="btnMenuI3">Análise e Planejamento de Vida</string>
-    <string name="btnMenuI4">Ética e Epifania</string>
-    <string name="btnMenuI5">Posições: O Y</string>
+    <string name="btnMenuI2">Posições: Âsanas passivos</string>
+    <string name="btnMenuI3">Posições: Âsanas ativos</string>
+    <string name="btnMenuI4">Como praticar</string>
+    <string name="btnMenuI5">Em breve...</string>
+    <string name="btnBack">Voltar</string>
+
+    //Titulos
+
+    <string name="titDftUsername">Brenda Sanchez</string>
+
+    //Textos
+    <string name="txtDftLoc">São Paulo - Brasil</string>
+    <string name="txtDftDesc">Lorem ipsum dolor sit amet
+        , consectetur adipiscing elit. Aenean at velit
+        quis ante hendrerit consequat. Nulla eget
+        dignissim risus. Quisque dui elit, fermentum
+        commodo condimentum quis, lacinia volutpat massa.
+        sit amet facilisis dui, ut imperdiet mauris.
+        Aliquam erat volutpat. Sed egestas lectus ac
+        viverra aliquam. </string>
+
+    //Hints
+    <string name="hintDesc">Escreva sua descrição...</string>
 
 </resources>

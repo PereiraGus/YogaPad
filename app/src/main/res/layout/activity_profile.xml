@@ -4,6 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/defaultCol"
     tools:context=".profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="223dp"
+            android:layout_height="229dp"
+            android:contentDescription="@string/descProfPt"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtNameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/titDftUsername"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtLocProfile"
+            style="@style/DefaultTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txtDftLoc"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="179dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDescProfile"
+                    style="@style/DefaultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/hintDesc"
+                    android:text="@string/txtDftDesc" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/btnBackProfile"
+            style="@style/DefaultBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBack" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
