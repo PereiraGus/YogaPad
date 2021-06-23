@@ -9,12 +9,14 @@
     tools:context=".menu">
 
     <ScrollView
-        android:layout_width="300dp"
-        android:layout_height="530dp"
+        android:layout_width="413dp"
+        android:layout_height="580dp"
         android:isScrollContainer="true"
+        android:padding="40dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,49 +28,44 @@
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_marginBottom="10dp"
+                android:text="@string/btnMenuI1" />
 
             <Button
                 android:id="@+id/btnMenu2"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="@string/btnMenuI2" />
 
             <Button
                 android:id="@+id/btnMenu3"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="@string/btnMenuI3" />
 
             <Button
                 android:id="@+id/btnMenu4"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="@string/btnMenuI4" />
 
             <Button
                 android:id="@+id/btnMenu5"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/btnMenu6"
-                style="@style/DefaultBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:enabled="false"
+                android:text="@string/btnMenuI5" />
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="415dp"
-        android:layout_height="148dp"
+        android:layout_width="418dp"
+        android:layout_height="131dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
