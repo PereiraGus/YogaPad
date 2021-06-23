@@ -4,58 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/defaultCol"
+    android:scrollbarStyle="insideOverlay"
     tools:context=".menu">
 
     <ScrollView
-        android:layout_width="418dp"
-        android:layout_height="590dp"
+        android:layout_width="300dp"
+        android:layout_height="530dp"
+        android:isScrollContainer="true"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnMenu1"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnMenu2"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/btnMenu3"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btnMenu4"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btnMenu5"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/btnMenu6"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -96,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="@string/DescHelp"
+            android:contentDescription="@string/descHelp"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
