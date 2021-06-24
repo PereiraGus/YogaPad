@@ -26,11 +26,25 @@
                 style="@style/TitleTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/titFunds" />
+                android:text="@string/titPass" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txtSubtitAct1"
+                style="@style/SubtitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitPass1" />
+
+            <TextView
+                android:id="@+id/txtLegendAct1"
+                style="@style/LegendTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legPass1" />
 
             <TextView
                 android:id="@+id/txtAct1"
@@ -39,11 +53,25 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:justificationMode="inter_word"
-                android:text="@string/txtFunds1" />
+                android:text="@string/txtPass1" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txtSubtitAct2"
+                style="@style/SubtitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitPass2" />
+
+            <TextView
+                android:id="@+id/txtLegendAct2"
+                style="@style/LegendTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legPass2" />
 
             <TextView
                 android:id="@+id/txtAct2"
@@ -52,7 +80,35 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:justificationMode="inter_word"
-                android:text="@string/txtFunds2"
+                android:text="@string/txtPass2"
+                android:textColor="#666875" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/txtSubtitAct3"
+                style="@style/SubtitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitPass3" />
+
+            <TextView
+                android:id="@+id/txtLegendAct3"
+                style="@style/LegendTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legPass3" />
+
+            <TextView
+                android:id="@+id/txtAct3"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:text="@string/txtPass2"
                 android:textColor="#666875" />
 
         </LinearLayout>

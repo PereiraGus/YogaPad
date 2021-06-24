@@ -9,11 +9,10 @@
     tools:context=".menu">
 
     <ScrollView
-        android:layout_width="413dp"
-        android:layout_height="580dp"
+        android:layout_width="414dp"
+        android:layout_height="612dp"
         android:isScrollContainer="true"
         android:padding="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -29,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:onClick="viewFunds"
                 android:text="@string/btnMenuI1" />
 
             <Button
@@ -36,6 +36,7 @@
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="viewPassive"
                 android:text="@string/btnMenuI2" />
 
             <Button
@@ -43,6 +44,7 @@
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="viewActive"
                 android:text="@string/btnMenuI3" />
 
             <Button
@@ -50,6 +52,7 @@
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="viewPractice"
                 android:text="@string/btnMenuI4" />
 
             <Button
@@ -64,8 +67,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="418dp"
-        android:layout_height="131dp"
+        android:layout_width="412dp"
+        android:layout_height="120dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="@string/descBack"
+            android:onClick="backToSplash"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageButton
@@ -87,6 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="@stringDescProf"
+            android:onClick="viewProfile"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageButton
@@ -96,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="@string/descHelp"
+            android:onClick="viewHelp"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,15 +11,28 @@
     </style>
 
     <style name="DefaultTxt" parent="TextAppearance.AppCompat">
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">#FF666875</item>
         <item name="android:textSize">30dp</item>
     </style>
 
     <style name="TitleTxt" parent="TextAppearance.AppCompat">
         <item name="android:gravity">center</item>
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">#DF5E35</item>
         <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubtitleTxt" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#DF5E35</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LegendTxt" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#DF5E35</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
