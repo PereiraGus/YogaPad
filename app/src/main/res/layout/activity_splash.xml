@@ -39,16 +39,32 @@
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="280dp"
-        android:layout_height="286dp"
+        android:layout_width="230dp"
+        android:layout_height="216dp"
         android:contentDescription="@string/descLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341"
+        app:layout_constraintVertical_bias="0.291"
         app:srcCompat="@drawable/along"
         tools:srcCompat="@drawable/along" />
+
+    <EditText
+        android:id="@+id/editTxtLogin"
+        style="@style/DefaultTxt"
+        android:layout_width="233dp"
+        android:layout_height="67dp"
+        android:editable="true"
+        android:ems="10"
+        android:hint="@string/hintLogin"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

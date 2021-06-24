@@ -31,6 +31,7 @@
                 style="@style/DefaultTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:text="@string/txtHelp1" />
 
             <TextView
@@ -38,6 +39,7 @@
                 style="@style/DefaultTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:text="@string/txtHelp2" />
 
             <TextView
@@ -45,6 +47,7 @@
                 style="@style/DefaultTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:text="@string/txtHelp3" />
 
             <Space
@@ -66,6 +69,7 @@
                 style="@style/DefaultTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:text="@string/txtHelp4" />
 
             <TextView
@@ -73,6 +77,7 @@
                 style="@style/DefaultTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:text="@string/txtHelp5" />
 
             <TextView
@@ -80,7 +85,16 @@
                 style="@style/DefaultTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:text="@string/txtHelp6" />
+
+            <TextView
+                android:id="@+id/txtHelp7"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/txtHelp7" />
 
             <Button
                 android:id="@+id/btnBackHelp"

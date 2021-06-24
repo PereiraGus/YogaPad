@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class profile extends AppCompatActivity {
 
@@ -12,6 +13,12 @@ public class profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        Intent intent_login = getIntent();
+        String message = intent_login.getStringExtra(splash.EXTRA_MESSAGE);
+
+        TextView textView = new TextView(this);
+        textView.setText(message);
     }
 
     Intent intent_profile = getIntent();
@@ -20,5 +27,4 @@ public class profile extends AppCompatActivity {
         Intent intent_back = new Intent(this, menu.class);
         startActivity(intent_back);
     }
-
 }

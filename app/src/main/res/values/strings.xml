@@ -127,16 +127,20 @@
     </string>
     <string name="txtHelp3">3: Visualiza o seu perfil.
     </string>
-    <string name="txtHelp4">4: Vai para o conteúdo anterior
+    <string name="txtHelp4">4: Uma barra de rolagem que
+        indica onde você está em relação ao conteúdo.
+    </string>
+    <string name="txtHelp5">5: Vai para o conteúdo anterior
         à este na lista de menu.
     </string>
-    <string name="txtHelp5">5: Volta ao menu principal.
+    <string name="txtHelp6">6: Volta ao menu principal.
     </string>
-    <string name="txtHelp6">6: Vai para o conteúdo posterior
+    <string name="txtHelp7">7: Vai para o conteúdo posterior
         à este na lista de menu.
     </string>
 
     //Hints
     <string name="hintDesc">Escreva sua descrição…</string>
+    <string name="hintLogin">Digite um nome de usuário…</string>
 
 </resources>
