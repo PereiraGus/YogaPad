@@ -67,41 +67,44 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="412dp"
+        android:layout_width="411dp"
         android:layout_height="120dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
+        <Button
             android:id="@+id/btnBackMenu"
             style="@style/DefaultBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="137dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:contentDescription="@string/descBack"
             android:onClick="backToSplash"
+            android:text="@string/btnBack"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <ImageButton
+        <Button
             android:id="@+id/btnProfileMenu"
             style="@style/DefaultBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="137dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:contentDescription="@stringDescProf"
             android:onClick="viewProfile"
+            android:text="@string/btnProf"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <ImageButton
+        <Button
             android:id="@+id/pngHelpMenu"
             style="@style/DefaultBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="137dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:contentDescription="@string/descHelp"
             android:onClick="viewHelp"
+            android:text="@string/btnHelp"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
