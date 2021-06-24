@@ -120,6 +120,21 @@
         ereta, sendo uma ótima posição para exercitar o
         equilíbrio.
     </string>
+    <string name="txtHelp1">1: Botões que levam a conteúdos
+    relacionados a Yoga.
+    </string>
+    <string name="txtHelp2">2: Volta a tela de início.
+    </string>
+    <string name="txtHelp3">3: Visualiza o seu perfil.
+    </string>
+    <string name="txtHelp4">4: Vai para o conteúdo anterior
+        à este na lista de menu.
+    </string>
+    <string name="txtHelp5">5: Volta ao menu principal.
+    </string>
+    <string name="txtHelp6">6: Vai para o conteúdo posterior
+        à este na lista de menu.
+    </string>
 
     //Hints
     <string name="hintDesc">Escreva sua descrição…</string>

@@ -7,15 +7,89 @@
     android:background="@color/defaultCol"
     tools:context=".help">
 
-    <Button
-        android:id="@+id/btnBackHelp"
-        style="@style/DefaultBtn"
-        android:layout_width="344dp"
-        android:layout_height="632dp"
-        android:onClick="backToMenu"
-        android:text="@string/btnBack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgHelp1"
+                android:layout_width="match_parent"
+                android:layout_height="616dp"
+                app:srcCompat="@drawable/help1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/txtHelp1"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtHelp1" />
+
+            <TextView
+                android:id="@+id/txtHelp2"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtHelp2" />
+
+            <TextView
+                android:id="@+id/txtHelp3"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtHelp3" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imgHelp"
+                android:layout_width="match_parent"
+                android:layout_height="616dp"
+                app:srcCompat="@drawable/help2" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/txtHelp4"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtHelp4" />
+
+            <TextView
+                android:id="@+id/txtHelp5"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtHelp5" />
+
+            <TextView
+                android:id="@+id/txtHelp6"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtHelp6" />
+
+            <Button
+                android:id="@+id/btnBackHelp"
+                style="@style/DefaultBtn"
+                android:layout_width="237dp"
+                android:layout_height="94dp"
+                android:onClick="backToMenu"
+                android:text="@string/btnBack" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
