@@ -40,4 +40,12 @@ public class practice extends AppCompatActivity{
 
     }
 
+    public void goToVideo (View view){
+
+        Uri linkYT = Uri.parse("https://www.youtube.com/watch?v=w9avGO3RQ94");
+        Intent intent_YT = new Intent(Intent.ACTION_VIEW, linkYT);
+        startActivity(intent_YT);
+
+    }
+
 }
