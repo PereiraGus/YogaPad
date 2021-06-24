@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YogaPad">
         <activity android:name=".help"></activity>
+        <activity android:name=".active" />
+        <activity android:name=".funds" />
+        <activity android:name=".passive" />
+        <activity android:name=".practice" />
         <activity android:name=".profile" />
         <activity android:name=".menu" />
         <activity android:name=".splash">
