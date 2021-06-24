@@ -19,6 +19,7 @@
             android:layout_width="175dp"
             android:layout_height="168dp"
             android:contentDescription="@string/descProfPt"
+            app:srcCompat="@drawable/profile"
             tools:srcCompat="@drawable/profile" />
 
         <TextView

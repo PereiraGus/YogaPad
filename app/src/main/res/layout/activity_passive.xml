@@ -46,6 +46,21 @@
                 android:layout_height="wrap_content"
                 android:text="@string/legPass1" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/sama" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
             <TextView
                 android:id="@+id/txtAct1"
                 style="@style/DefaultTxt"
@@ -72,6 +87,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/legPass2" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/vaj" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
 
             <TextView
                 android:id="@+id/txtAct2"
@@ -101,6 +131,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/legPass3" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/swan" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
 
             <TextView
                 android:id="@+id/txtAct3"

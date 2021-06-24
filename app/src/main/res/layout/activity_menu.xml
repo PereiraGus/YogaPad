@@ -86,6 +86,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/descBack"
             android:onClick="backToSplash"
+            android:src="@drawable/home"
             android:text="@string/btnBack"
             tools:srcCompat="@drawable/home" />
 
@@ -98,6 +99,7 @@
             android:contentDescription="@string/descProf"
             android:cropToPadding="true"
             android:onClick="viewProfile"
+            android:src="@drawable/along"
             android:text="@string/btnProf"
             tools:srcCompat="@drawable/along" />
 
@@ -109,6 +111,7 @@
             android:layout_weight="1"
             android:contentDescription="@string/descHelp"
             android:onClick="viewHelp"
+            android:src="@drawable/helpme"
             android:text="@string/btnHelp"
             tools:srcCompat="@drawable/helpme" />
     </LinearLayout>
