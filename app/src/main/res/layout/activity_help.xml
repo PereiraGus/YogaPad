@@ -12,6 +12,7 @@
         style="@style/DefaultBtn"
         android:layout_width="344dp"
         android:layout_height="632dp"
+        android:onClick="backToMenu"
         android:text="@string/btnBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

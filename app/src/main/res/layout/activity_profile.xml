@@ -19,7 +19,7 @@
             android:layout_width="175dp"
             android:layout_height="168dp"
             android:contentDescription="@string/descProfPt"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/profile" />
 
         <TextView
             android:id="@+id/txtNameProfile"
@@ -62,6 +62,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:hint="@string/hintDesc"
+                    android:onClick="backToMenu"
                     android:text="@string/txtDftDesc" />
             </LinearLayout>
         </ScrollView>

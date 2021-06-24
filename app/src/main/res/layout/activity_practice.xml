@@ -53,6 +53,13 @@
                 android:onClick="getMap"
                 android:text="@string/btnPract" />
 
+            <Button
+                android:id="@+id/btnTubePract"
+                style="@style/DefaultBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnPract" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -71,6 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:layout_margin="5dp"
+            android:onClick="previous"
             android:text="@string/btnPrevious"
             android:textSize="20sp" />
 
@@ -81,6 +89,7 @@
             android:layout_height="110dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:onClick="backToMenu"
             android:text="@string/btnBack"
             android:textSize="20sp" />
 
@@ -91,6 +100,7 @@
             android:layout_height="110dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:onClick="forward"
             android:text="@string/btnNext"
             android:textSize="20sp" />
     </LinearLayout>

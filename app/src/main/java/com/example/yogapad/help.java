@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class help extends AppCompatActivity {
 
@@ -14,5 +15,10 @@ public class help extends AppCompatActivity {
     }
 
     Intent intent_back = getIntent();
+
+    public void backToMenu (View view){
+        Intent intent_back = new Intent(this, menu.class);
+        startActivity(intent_back);
+    }
 
 }

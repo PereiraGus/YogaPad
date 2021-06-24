@@ -9,8 +9,9 @@
     tools:context=".menu">
 
     <ScrollView
-        android:layout_width="414dp"
-        android:layout_height="612dp"
+        android:id="@+id/scrollView3"
+        android:layout_width="415dp"
+        android:layout_height="573dp"
         android:isScrollContainer="true"
         android:padding="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,44 +68,48 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="411dp"
-        android:layout_height="120dp"
+        android:layout_width="417dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="1dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.0">
 
-        <Button
+        <ImageButton
             android:id="@+id/btnBackMenu"
             style="@style/DefaultBtn"
             android:layout_width="137dp"
-            android:layout_height="120dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/descBack"
             android:onClick="backToSplash"
             android:text="@string/btnBack"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/home" />
 
-        <Button
+        <ImageButton
             android:id="@+id/btnProfileMenu"
             style="@style/DefaultBtn"
-            android:layout_width="137dp"
-            android:layout_height="120dp"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:contentDescription="@stringDescProf"
+            android:contentDescription="@string/descProf"
+            android:cropToPadding="true"
             android:onClick="viewProfile"
             android:text="@string/btnProf"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/along" />
 
-        <Button
+        <ImageButton
             android:id="@+id/pngHelpMenu"
             style="@style/DefaultBtn"
             android:layout_width="137dp"
-            android:layout_height="120dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/descHelp"
             android:onClick="viewHelp"
             android:text="@string/btnHelp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/helpme" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
