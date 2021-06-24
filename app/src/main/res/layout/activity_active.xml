@@ -134,6 +134,7 @@
             android:layout_height="110dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:onClick="backToMenu"
             android:text="@string/btnBack"
             android:textSize="20sp" />
 
