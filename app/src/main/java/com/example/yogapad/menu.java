@@ -14,6 +14,8 @@ public class menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
 
+    Intent intent_open = getIntent();
+
     public void viewFunds (View view){
         Intent intent_funds = new Intent(this, funds.class);
         startActivity(intent_funds);

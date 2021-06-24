@@ -2,6 +2,7 @@ package com.example.yogapad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class help extends AppCompatActivity {
@@ -11,4 +12,7 @@ public class help extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
     }
+
+    Intent intent_back = getIntent();
+
 }
