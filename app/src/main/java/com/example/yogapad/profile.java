@@ -17,8 +17,8 @@ public class profile extends AppCompatActivity {
         Intent intent_login = getIntent();
         String message = intent_login.getStringExtra(splash.EXTRA_MESSAGE);
 
-        TextView textView = new TextView(this);
-        textView.setText(message);
+        TextView txtNameProfile = findViewById(R.id.txtNameProfile);
+        txtNameProfile.setText(message);
     }
 
     Intent intent_profile = getIntent();

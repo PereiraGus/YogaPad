@@ -20,16 +20,14 @@ public class splash extends AppCompatActivity {
     }
 
     public void openApp (View view){
-        Intent intent_open = new Intent(this, menu.class);
-        startActivity(intent_open);
-    }
-
-    public void passLogin(View view){
         Intent intent_login = new Intent(this, profile.class);
-        EditText textLogin = (EditText) findViewById(R.id.editTxtLogin);
+        EditText textLogin = findViewById(R.id.editTxtLogin);
         String message = textLogin.getText().toString();
         intent_login.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent_login);
+
+        Intent intent_open = new Intent(this, menu.class);
+        startActivity(intent_open);
     }
 
     Intent intent_back = getIntent();
