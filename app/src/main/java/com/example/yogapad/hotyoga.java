@@ -1,5 +1,7 @@
 package com.example.yogapad;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -9,12 +11,9 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
 
 public class hotyoga extends AppCompatActivity implements SensorEventListener {
-
-    Intent intent_hotyoga = getIntent();
 
     private TextView txtTempHot;
     private SensorManager sensorM;
@@ -26,7 +25,9 @@ public class hotyoga extends AppCompatActivity implements SensorEventListener {
     protected void onCreate(Bundle savedInstanceStare)
     {
         super.onCreate(savedInstanceStare);
-        findViewById(R.id.txtTempHot);
+        setContentView(R.layout.activity_hotyoga);
+
+        txtTempHot = findViewById(R.id.txtTempHot);
         sensorM = (SensorManager) getSystemService(Context.SEARCH_SERVICE);
 
         if(sensorM.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE) != null)
@@ -41,9 +42,17 @@ public class hotyoga extends AppCompatActivity implements SensorEventListener {
         }
     }
 
+    Intent intent_hotyoga = getIntent();
+
+    public void backToMenu (View view){
+        Intent intent_back = new Intent(this, menu.class);
+        startActivity(intent_back);
+    }
+
     @Override
     public void onSensorChanged(SensorEvent event) {
-        txtTempHot.setText(event.values[0]+"°C");
+        String temperature = event.values[0]+"°C";
+        txtTempHot.setText(temperature);
     }
 
     @Override
