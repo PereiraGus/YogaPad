@@ -142,5 +142,6 @@
     //Hints
     <string name="hintDesc">Escreva sua descrição…</string>
     <string name="hintLogin">Digite um nome de usuário…</string>
+    <string name="hintTemperature">Não foi possível definir a temperatura do ambiente</string>
 
 </resources>

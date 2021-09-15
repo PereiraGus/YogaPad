@@ -51,4 +51,9 @@ public class menu extends AppCompatActivity {
         startActivity(intent_help);
     }
 
+    public void viewHot (View view){
+        Intent intent_hotyoga = new Intent(this, hotyoga.class);
+        startActivity(intent_hotyoga);
+    }
+
 }
