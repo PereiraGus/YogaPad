@@ -155,6 +155,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
+        style="@style/DefaultLinear"
         android:layout_width="420dp"
         android:layout_height="98dp"
         android:orientation="horizontal"
