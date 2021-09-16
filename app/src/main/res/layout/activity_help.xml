@@ -96,13 +96,23 @@
                 android:layout_margin="20dp"
                 android:text="@string/txtHelp7" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
             <Button
                 android:id="@+id/btnBackHelp"
                 style="@style/DefaultBtn"
                 android:layout_width="237dp"
                 android:layout_height="94dp"
+                android:layout_gravity="center"
                 android:onClick="backToMenu"
                 android:text="@string/btnBack" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
         </LinearLayout>
     </ScrollView>
 
