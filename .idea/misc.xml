@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/BRENDASANCHESBERZIN/AndroidStudioProjects/YogaPad/app/src/main/res/layout/activity_funds.xml" value="0.12545289855072464" />
+        <entry key="..\:/Users/BRENDASANCHESBERZIN/AndroidStudioProjects/YogaPad/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BRENDASANCHESBERZIN/AndroidStudioProjects/YogaPad/app/src/main/res/layout/activity_practice.xml" value="0.12545289855072464" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
