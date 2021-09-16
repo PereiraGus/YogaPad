@@ -23,7 +23,7 @@ public class practice extends AppCompatActivity{
     }
 
     public void forward (View view){
-        Intent intent_forw = new Intent(this, hotyoga.class);
+        Intent intent_forw = new Intent(this, hot.class);
         startActivity(intent_forw);
     }
 

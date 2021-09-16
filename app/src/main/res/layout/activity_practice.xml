@@ -75,7 +75,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/btnPrevAct"
+            android:id="@+id/btnPrevHot"
             style="@style/DefaultBtn"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
@@ -85,7 +85,7 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/btnBackAct"
+            android:id="@+id/btnBackHot"
             style="@style/DefaultBtn"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
@@ -96,7 +96,7 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/btnNextAct"
+            android:id="@+id/btnNextHot"
             style="@style/DefaultBtn"
             android:layout_width="wrap_content"
             android:layout_height="110dp"

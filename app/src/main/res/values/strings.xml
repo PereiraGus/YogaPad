@@ -56,8 +56,13 @@
     <string name="legAct2">Postura do joelho</string>
     <string name="subtitAct3">Matsyendrâsana</string>
 
+    <string name="titHot">Hot Yoga</string>
+    <string name="subtitHot">Consulte a temperatura atual para ter uma sessão
+    ideal de Hot Yoga</string>
+
 
     //Textos
+    <string name="txtInd">Indisponível...</string>
     <string name="txtDftLoc">São Paulo - Brasil</string>
     <string name="txtDftDesc">Comecei a praticar Yoga
         como hobbie e são inegáveis os benefícios a
@@ -137,6 +142,18 @@
     </string>
     <string name="txtHelp7">7: Vai para o conteúdo posterior
         à este na lista de menu.
+    </string>
+    <string name="txtHotDesc1">A temperatura está baixa em um nível perigoso!!!
+    </string>
+    <string name="txtHotDesc2">A temperatura está muito fria para praticar qualquer
+        tipo de Yoga.
+    </string>
+    <string name="txtHotDesc3">A temperatura está muito fria para praticar Hot Yoga.
+        Tente a versão tradicional da modalidade.
+    </string>
+    <string name="txtHotDesc4">A temperatura está ideal para a prática de Hot Yoga.
+    </string>
+    <string name="txtHotDesc5">A temperatura está muito alta em um nível perigoso!!!
     </string>
 
     //Hints

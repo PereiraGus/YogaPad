@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaultCol"
+        tools:layout_editor_absoluteY="99dp">
+
+        <TextView
+            android:id="@+id/txtTitHot"
+            style="@style/TitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titHot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.051" />
+
+        <TextView
+            android:id="@+id/txtSubtitHot"
+            style="@style/SubtitleTxt"
+            android:layout_width="383dp"
+            android:layout_height="234dp"
+            android:gravity="center"
+            android:text="@string/subtitHot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.128" />
+
+        <TextView
+            android:id="@+id/txtTempHot"
+            style="@style/TitleTxt"
+            android:layout_width="215dp"
+            android:layout_height="177dp"
+            android:layout_marginTop="183dp"
+            android:layout_marginBottom="100dp"
+            android:text="@string/txtInd"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.367"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <ImageView
+            android:id="@+id/imgTherm"
+            android:layout_width="202dp"
+            android:layout_height="191dp"
+            android:src="@drawable/thermometer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.494"
+            app:srcCompat="@drawable/helpme"
+            tools:srcCompat="@drawable/helpme" />
+
+        <ImageView
+            android:id="@+id/imgTemp"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginRight="71dp"
+            android:src="@drawable/ice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.538"
+            app:srcCompat="@drawable/helpme"
+            tools:srcCompat="@drawable/helpme" />
+
+        <TextView
+            android:id="@+id/txtTempDesc"
+            style="@style/LegendTxt"
+            android:layout_width="368dp"
+            android:layout_height="170dp"
+            android:text="@string/txtInd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.816" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            style="@style/DefaultLinear"
+            android:layout_width="420dp"
+            android:layout_height="98dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnPrevHot"
+                style="@style/DefaultBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:onClick="previous"
+                android:text="@string/btnPrevious"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnBackHot"
+                style="@style/DefaultBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="backToMenu"
+                android:text="@string/btnBack"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnNextHot"
+                style="@style/DefaultBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="forward"
+                android:text="@string/btnNext"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yogapad">
 
+    <uses-feature
+        android:name="android.hardware.SensorManager"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/yogamat"
@@ -9,7 +13,8 @@
         android:roundIcon="@drawable/yogamat"
         android:supportsRtl="true"
         android:theme="@style/Theme.YogaPad">
-        <activity android:name=".help"></activity>
+        <activity android:name=".hot"></activity>
+        <activity android:name=".help" />
         <activity android:name=".active" />
         <activity android:name=".funds" />
         <activity android:name=".passive" />
