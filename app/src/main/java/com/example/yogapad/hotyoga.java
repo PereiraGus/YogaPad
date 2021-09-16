@@ -42,8 +42,6 @@ public class hotyoga extends AppCompatActivity implements SensorEventListener {
         }
     }
 
-    Intent intent_hotyoga = getIntent();
-
     public void backToMenu (View view){
         Intent intent_back = new Intent(this, menu.class);
         startActivity(intent_back);

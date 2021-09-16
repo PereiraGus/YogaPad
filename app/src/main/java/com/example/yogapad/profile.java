@@ -9,19 +9,19 @@ import android.widget.TextView;
 
 public class profile extends AppCompatActivity {
 
+    TextView txtNameProfile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        Intent intent_login = getIntent();
-        String message = intent_login.getStringExtra(splash.EXTRA_MESSAGE);
+        Intent intent_profile = getIntent();
 
-        TextView txtNameProfile = findViewById(R.id.txtNameProfile);
+        String message = intent_profile.getStringExtra("message-key");
+        txtNameProfile = (TextView)findViewById(R.id.txtNameProfile);
         txtNameProfile.setText(message);
     }
-
-    Intent intent_profile = getIntent();
 
     public void backToMenu (View view){
         Intent intent_back = new Intent(this, menu.class);

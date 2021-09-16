@@ -11,19 +11,20 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class splash extends AppCompatActivity {
 
+    EditText textLogin;
     public final static String EXTRA_MESSAGE = ".MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        textLogin = (EditText)findViewById(R.id.editTxtLogin);
     }
 
     public void openApp (View view){
         Intent intent_login = new Intent(this, profile.class);
-        EditText textLogin = findViewById(R.id.editTxtLogin);
         String message = textLogin.getText().toString();
-        intent_login.putExtra(EXTRA_MESSAGE, message);
+        intent_login.putExtra("message-key", message);
         startActivity(intent_login);
 
         Intent intent_open = new Intent(this, menu.class);
