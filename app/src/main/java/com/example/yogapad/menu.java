@@ -42,9 +42,9 @@ public class menu extends AppCompatActivity {
     }
 
     public void viewProfile (View view){
-        boolean first = false;
+        boolean first = true;
         String message;
-        if (first == false)
+        if (first == true)
         {
             Intent intent_open = getIntent();
             message = intent_open.getStringExtra("message-key");
