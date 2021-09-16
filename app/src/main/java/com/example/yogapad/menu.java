@@ -42,7 +42,21 @@ public class menu extends AppCompatActivity {
     }
 
     public void viewProfile (View view){
+        boolean first = false;
+        String message;
+        if (first == false)
+        {
+            Intent intent_open = getIntent();
+            message = intent_open.getStringExtra("message-key");
+        }
+        else
+        {
+            Intent intent_back = getIntent();
+            message = intent_back.getStringExtra("message-key");
+        }
+
         Intent intent_profile = new Intent(this, profile.class);
+        intent_profile.putExtra("message-key", message);
         startActivity(intent_profile);
     }
 

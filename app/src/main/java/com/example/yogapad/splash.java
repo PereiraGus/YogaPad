@@ -2,17 +2,16 @@ package com.example.yogapad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
+import android.widget.Toast;
 
 public class splash extends AppCompatActivity {
 
     EditText textLogin;
-    public final static String EXTRA_MESSAGE = ".MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +21,20 @@ public class splash extends AppCompatActivity {
     }
 
     public void openApp (View view){
-        Intent intent_login = new Intent(this, profile.class);
-        String message = textLogin.getText().toString();
-        intent_login.putExtra("message-key", message);
-        startActivity(intent_login);
+        if(textLogin.getText().toString() == "")
+        {
+            Context context = getApplicationContext();
+            Toast toast = Toast.makeText(context, R.string.txtRequired, Toast.LENGTH_LONG);
+            toast.show();
+        }
+        else
+        {
+            String message = textLogin.getText().toString();
 
-        Intent intent_open = new Intent(this, menu.class);
-        startActivity(intent_open);
+            Intent intent_open = new Intent(this, menu.class);
+            intent_open.putExtra("message-key", message);
+            startActivity(intent_open);
+        }
     }
-
-    Intent intent_back = getIntent();
 
 }

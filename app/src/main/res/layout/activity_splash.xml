@@ -9,14 +9,15 @@
 
     <Button
         android:id="@+id/btnStartSplash"
+        style="@style/DefaultBtn"
         android:layout_width="240dp"
         android:layout_height="130dp"
         android:layout_marginBottom="96dp"
         android:contentDescription="@string/btnStart"
+        android:enabled="true"
         android:onClick="openApp"
         android:text="@string/btnStart"
         android:textSize="34sp"
-        app:backgroundTint="#DF5E35"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

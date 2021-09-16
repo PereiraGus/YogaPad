@@ -63,6 +63,7 @@
 
     //Textos
     <string name="txtInd">Indisponível...</string>
+    <string name="txtRequired">Preencha todos os campos antes de continuar.</string>
     <string name="txtDftLoc">São Paulo - Brasil</string>
     <string name="txtDftDesc">Comecei a praticar Yoga
         como hobbie e são inegáveis os benefícios a
