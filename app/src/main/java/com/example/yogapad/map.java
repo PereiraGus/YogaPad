@@ -75,7 +75,7 @@ public class map extends AppCompatActivity implements findLoc.OnTaskCompleted {
                 Manifest.permission.ACCESS_COARSE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,new String[]
-                    {Manifest.permission.ACESS_COARSE_LOCATION},REQUEST_LOCATION_PERMISSION);
+                    {Manifest.permission.ACCESS_COARSE_LOCATION},REQUEST_LOCATION_PERMISSION);
         } else{
             mTrackingLocation = true;
             mFusedLocationClient.requestLocationUpdates(getLocationRequest(), mLocationCallback, null);
@@ -102,11 +102,12 @@ public class map extends AppCompatActivity implements findLoc.OnTaskCompleted {
     }
 
     @Override public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch(requestCode){
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
             case REQUEST_LOCATION_PERMISSION:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     startTrackingLocation();
-                } else{
+                } else {
                     Toast.makeText(this, R.string.location_permission_denied, Toast.LENGHT_SHORT).show();
                 }
                 break;

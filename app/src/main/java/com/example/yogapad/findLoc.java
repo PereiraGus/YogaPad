@@ -14,10 +14,10 @@ import java.util.List;
 import java.util.Locale;
 
 class findLoc<OnTaskCompleted> extends AsyncTask<Location, Void, String[]>{
-    private Context mContext;
-    private OnTaskCompleted mListener;
+    private final Context mContext;
+    private final OnTaskCompleted mListener;
 
-    findLoc(Context applicationContext, onTaskCompleted listener){
+    <onTaskCompleted> findLoc(Context applicationContext, onTaskCompleted listener){
         mContext = applicationContext;
         mListener = listener;
     }
@@ -29,7 +29,7 @@ class findLoc<OnTaskCompleted> extends AsyncTask<Location, Void, String[]>{
         Geocoder geocoder = new Geocoder(mContext, Locale.getDefault());
         Location location = params[0];
 
-        List<Adress> adressess = null;
+        List<Address> adressess = null;
         String[] resultMessage = new String[3];
         resultMessage[0] = "";
         resultMessage[1] = "";
