@@ -156,7 +156,10 @@
     </string>
     <string name="txtHotDesc5">A temperatura está muito alta em um nível perigoso!!!
     </string>
-    <string name="location_permission_denied">Permissão de localização negada!</string>
+    <string name="location_permission_denied">Permissão de localização negada, autorize a aplicação!</string>
+    <string name="service_not_avaiable">Serviço Indisponível</string>
+    <string name="invalid_lat_long">Coordenadas Inválidas</string>
+    <string name="no_adress_found">Nenhum endereço encontrado</string>
 
     //Hints
     <string name="hintDesc">Escreva sua descrição…</string>
