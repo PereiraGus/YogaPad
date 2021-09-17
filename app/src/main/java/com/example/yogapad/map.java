@@ -1,5 +1,6 @@
 package com.example.yogapad;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -9,12 +10,13 @@ import android.content.pm.PackageManager;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
+import android.widget.Toast;
 
-/*import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
-import com.google.android.gms.location.LocationServices;*/
+import com.google.android.gms.location.LocationServices;
 
 public class map extends AppCompatActivity implements findLoc.OnTaskCompleted {
 
@@ -80,6 +82,35 @@ public class map extends AppCompatActivity implements findLoc.OnTaskCompleted {
         }
     }
 
+    private LocationRequest getLocationRequest(){
+        LocationRequest locationRequest = new LocationRequest();
+        locationRequest.setInterval(10000);
+        locationRequest.setFastestInterval(5000);
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        return locationRequest;
+    }
 
+    private void stopTrackingLocation(){
+        if(mTrackingLocation){
+            mTrackingLocation = false;
+        }
+    }
+
+    @Override protected void onSaveInstanceState(Bundle outState){
+        outState.putBoolean(TRACKING_LOCATION_KEY, mTrackingLocation);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch(requestCode){
+            case REQUEST_LOCATION_PERMISSION:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    startTrackingLocation();
+                } else{
+                    Toast.makeText(this, R.string.location_permission_denied, Toast.LENGHT_SHORT).show();
+                }
+                break;
+        }
+    }
 
 }
