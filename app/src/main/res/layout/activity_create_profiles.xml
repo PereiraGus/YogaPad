@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultCol" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaultCol"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnBackCreate"
+            style="@style/DefaultBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="left"
+            android:onClick="backToSplash"
+            android:text="@string/btnBack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/titCreate"
+                style="@style/TitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titProfile" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/legNameCreate"
+                style="@style/SubtitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legName" />
+
+            <EditText
+                android:id="@+id/txtNameCreate"
+                style="@style/LegendTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/typeHere"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/legLocCreate"
+                style="@style/SubtitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legLoc" />
+
+            <EditText
+                android:id="@+id/txtLocCreate"
+                style="@style/LegendTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/typeHere"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/legDescrCreate"
+                style="@style/SubtitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legDescr" />
+
+            <EditText
+                android:id="@+id/txtDescrCreate"
+                style="@style/LegendTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/typeHere"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="4"
+                android:minLines="3"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCreate"
+            style="@style/DefaultBtn"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="run"
+            android:text="@string/btnCreate" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,36 +7,49 @@
     android:background="@color/defaultCol"
     tools:context=".splash">
 
-    <Button
-        android:id="@+id/btnStartSplash"
-        style="@style/DefaultBtn"
-        android:layout_width="240dp"
-        android:layout_height="130dp"
-        android:layout_marginBottom="96dp"
-        android:contentDescription="@string/btnStart"
-        android:enabled="true"
-        android:onClick="openApp"
-        android:text="@string/btnStart"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
-        app:layout_constraintVertical_bias="0.828" />
-
     <TextView
         android:id="@+id/txtTitSplash"
         style="@style/TitleTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
+        android:textColor="#D84315"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/txtProfilesSplash"
+        style="@style/LegendTxt"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:text="@string/txtProfiles"
+        android:textColor="#D84315"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/txtNoProfSplash"
+        style="@style/LegendTxt"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:text="@string/txtEmpty"
+        android:textColor="#E53935"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -45,27 +58,52 @@
         android:contentDescription="@string/descLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291"
+        app:layout_constraintVertical_bias="0.24"
         app:srcCompat="@drawable/along"
         tools:srcCompat="@drawable/along" />
 
-    <EditText
-        android:id="@+id/editTxtLogin"
-        style="@style/DefaultTxt"
-        android:layout_width="233dp"
-        android:layout_height="67dp"
-        android:ems="10"
-        android:hint="@string/hintLogin"
-        android:inputType="textPersonName"
-        android:textAppearance="@style/DefaultTxt"
+    <ScrollView
+        android:layout_width="399dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNewProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfilesSplash"
+        app:layout_constraintVertical_bias="0.25">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listProfSplash"
+                style="@style/DefaultTxt"
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:foregroundGravity="bottom"></ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnNewProf"
+        style="@style/DefaultBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createProfile"
+        android:text="@string/btnNewProf"
+        android:textColor="#FFECB3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

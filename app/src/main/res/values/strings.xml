@@ -11,7 +11,7 @@
 
 
     //Texto de botões
-    <string name="btnStart">Começar</string>
+    <string name="btnNewProf">Novo perfil</string>
 
     <string name="btnMenuI1">Fundamentos da Yoga</string>
     <string name="btnMenuI2">Posições: Âsanas passivos</string>
@@ -23,6 +23,7 @@
     <string name="btnBack">Voltar</string>
     <string name="btnPrevious">Anterior</string>
     <string name="btnNext">Próximo</string>
+    <string name="btnCreate">Criar</string>
 
     <string name="btnPract">Clique aqui para
         encontrar uma escola de Yoga próxima
@@ -33,6 +34,11 @@
     </string>
 
     //Titulos
+
+    <string name="titProfile">Criar novo perfil</string>
+    <string name="legName">Nome</string>
+    <string name="legLoc">Localização</string>
+    <string name="legDescr">Descrição</string>
 
     <string name="titDftUsername">Brenda Sanchez</string>
 
@@ -62,8 +68,15 @@
 
 
     //Textos
+    <string name="txtY">Sim</string>
+    <string name="txtN">Não</string>
     <string name="txtInd">Indisponível...</string>
     <string name="txtRequired">Preencha todos os campos antes de continuar.</string>
+    <string name="txtEmpty">Não há dados...</string>
+    <string name="txtProfiles">Selecione um dos perfil abaixo ou crie um novo:</string>
+    <string name="txtName">Nome</string>
+    <string name="txtLoc">Localização</string>
+    <string name="txtDescr">Descrição</string>
     <string name="txtDftLoc">São Paulo - Brasil</string>
     <string name="txtDftDesc">Comecei a praticar Yoga
         como hobbie e são inegáveis os benefícios a
@@ -165,5 +178,20 @@
     <string name="hintDesc">Escreva sua descrição…</string>
     <string name="hintLogin">Digite um nome de usuário…</string>
     <string name="hintTemperature">Não foi possível definir a temperatura do ambiente</string>
+    <string name="typeHere">Digite aqui...</string>
+
+    //Alerts e toasts
+    <string name="tstDeleteAll">Deseja mesmo deletar todos os perfis?</string>
+    <string name="tstDelete">Deseja mesmo deletar este perfil?</string>
+    <string name="tstDeleteConf">Perfil apagado com êxito</string>
+    <string name="title_activity_all_profiles">activity_allProfiles</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

@@ -6,6 +6,14 @@
         android:name="android.hardware.SensorManager"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/yogamat"
@@ -13,7 +21,10 @@
         android:roundIcon="@drawable/yogamat"
         android:supportsRtl="true"
         android:theme="@style/Theme.YogaPad">
-        <activity android:name=".hot"></activity>
+        <activity
+            android:name=".createProfiles"
+            android:exported="true" />
+        <activity android:name=".hot" />
         <activity android:name=".help" />
         <activity android:name=".active" />
         <activity android:name=".funds" />
@@ -29,7 +40,5 @@
             </intent-filter>
         </activity>
     </application>
-    
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
 </manifest>
