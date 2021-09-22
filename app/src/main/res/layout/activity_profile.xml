@@ -57,7 +57,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txtDescProfile"
+                    android:id="@+id/txtDescrProfile"
                     style="@style/DefaultTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

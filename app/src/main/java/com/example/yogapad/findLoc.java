@@ -1,4 +1,4 @@
-package com.example.yogapad;
+/*package com.example.yogapad;
 
 import android.content.Context;
 import android.location.Address;
@@ -19,7 +19,7 @@ class findLoc<OnTaskCompleted> extends AsyncTask<Location, Void, String[]>{
 
     <onTaskCompleted> findLoc(Context applicationContext, onTaskCompleted listener){
         mContext = applicationContext;
-        mListener = listener;
+        mListener = (OnTaskCompleted) listener;
     }
 
     private final String TAG = findLoc.class.getSimpleName();
@@ -74,3 +74,4 @@ class findLoc<OnTaskCompleted> extends AsyncTask<Location, Void, String[]>{
         void onTaskCompleted(String[] result);
     }
 }
+*/

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultCol"
+    tools:context=".config">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBackConfig"
+            style="@style/DefaultBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="left"
+            android:onClick="backToMenu"
+            android:text="@string/btnBack"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnHelpConfig"
+                    style="@style/DefaultBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnHelp"
+                    tools:ignore="TextContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titLangConfig"
+                        style="@style/TitleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/titLang"
+                        tools:ignore="TextContrastCheck" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false"
+                        android:checkedButton="@id/rdbPtConfig"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdbPtConfig"
+                            style="@style/DefaultRdb"
+                            android:layout_width="191dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rdbPt"
+                            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                        <RadioButton
+                            android:id="@+id/rdbEngConfig"
+                            style="@style/DefaultRdb"
+                            android:layout_width="197dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rdbEng"
+                            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDeleteAllConfig"
+                    style="@style/DefaultBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnDeleteAll"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/btnBackupConfig"
+                    style="@style/DefaultBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnBackup"
+                    tools:ignore="TextContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/subAboutConfig"
+                        style="@style/SubtitleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/titAbout"
+                        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/txtAbout1"
+                        style="@style/DefaultTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:text="@string/txtAbout1"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/txtAbout2"
+                        style="@style/DefaultTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/txtAbout2"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/txtAbout3"
+                        style="@style/DefaultTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/txtAbout3"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

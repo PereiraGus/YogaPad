@@ -8,11 +8,9 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:required="true" />
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:required="true" />
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -21,6 +19,9 @@
         android:roundIcon="@drawable/yogamat"
         android:supportsRtl="true"
         android:theme="@style/Theme.YogaPad">
+        <activity
+            android:name=".config"
+            android:exported="true" />
         <activity
             android:name=".createProfiles"
             android:exported="true" />

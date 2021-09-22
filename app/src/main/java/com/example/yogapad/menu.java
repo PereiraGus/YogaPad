@@ -14,7 +14,7 @@ public class menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
 
-    Intent intent_open = getIntent();
+    Intent intent_start = getIntent();
 
     public void viewFunds (View view){
         Intent intent_funds = new Intent(this, funds.class);
@@ -42,27 +42,15 @@ public class menu extends AppCompatActivity {
     }
 
     public void viewProfile (View view){
-        boolean first = true;
-        String message;
-        if (first == true)
-        {
-            Intent intent_open = getIntent();
-            message = intent_open.getStringExtra("message-key");
-        }
-        else
-        {
-            Intent intent_back = getIntent();
-            message = intent_back.getStringExtra("message-key");
-        }
-
+        int sessionID = getIntent().getIntExtra("ID", 1);
         Intent intent_profile = new Intent(this, profile.class);
-        intent_profile.putExtra("message-key", message);
+        intent_profile.putExtra("ID", sessionID);
         startActivity(intent_profile);
     }
 
-    public void viewHelp (View view){
-        Intent intent_help = new Intent(this, help.class);
-        startActivity(intent_help);
+    public void viewConfig (View view){
+        Intent intent_config = new Intent(this, config.class);
+        startActivity(intent_config);
     }
 
     public void viewHot (View view){

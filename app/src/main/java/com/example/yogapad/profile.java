@@ -3,32 +3,46 @@ package com.example.yogapad;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 public class profile extends AppCompatActivity {
 
-    TextView txtNameProfile;
-    String message;
+    TextView txtName;
+    TextView txtLoc;
+    TextView txtDescr;
+    private DatabaseHelper dbusers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        txtName = (TextView) findViewById(R.id.txtNameProfile);
+        txtLoc = (TextView) findViewById(R.id.txtLocProfile);
+        txtDescr = (TextView) findViewById(R.id.txtDescrProfile);
 
-        Intent intent_profile = getIntent();
+        int sessionID = getIntent().getIntExtra("ID", 1);
 
-        message = intent_profile.getStringExtra("message-key");
-        txtNameProfile = (TextView) findViewById(R.id.txtNameProfile);
-        txtNameProfile.setText(message);
+        dbusers = new DatabaseHelper(this);
 
-        Intent intent_username = new Intent();
+        users user = new users();
+
+        Cursor rs = dbusers.getData(sessionID);
+        rs.moveToFirst();
+
+        user.set_name(rs.getString(rs.getColumnIndex(DatabaseHelper.PROFILE_COLUMN_NAME)));
+        user.set_loc(rs.getString(rs.getColumnIndex(DatabaseHelper.PROFILE_COLUMN_LOC)));
+        user.set_descr(rs.getString(rs.getColumnIndex(DatabaseHelper.PROFILE_COLUMN_DESCR)));
+
+        txtName.setText(user.get_name());
+        txtLoc.setText(user.get_loc());
+        txtDescr.setText(user.get_descr());
     }
 
     public void backToMenu (View view){
         Intent intent_back = new Intent(this, menu.class);
-        intent_back.putExtra("message-key", message);
         startActivity(intent_back);
     }
 }

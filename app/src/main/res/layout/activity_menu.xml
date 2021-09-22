@@ -83,11 +83,12 @@
         <ImageButton
             android:id="@+id/btnBackMenu"
             style="@style/DefaultBtn"
-            android:layout_width="137dp"
-            android:layout_height="match_parent"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             android:layout_weight="1"
             android:contentDescription="@string/descBack"
             android:onClick="backToSplash"
+            android:scaleType="fitCenter"
             android:src="@drawable/home"
             android:text="@string/btnBack"
             tools:srcCompat="@drawable/home" />
@@ -95,12 +96,13 @@
         <ImageButton
             android:id="@+id/btnProfileMenu"
             style="@style/DefaultBtn"
-            android:layout_width="138dp"
-            android:layout_height="match_parent"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             android:layout_weight="1"
             android:contentDescription="@string/descProf"
             android:cropToPadding="true"
             android:onClick="viewProfile"
+            android:scaleType="fitCenter"
             android:src="@drawable/along"
             android:text="@string/btnProf"
             tools:srcCompat="@drawable/along" />
@@ -108,13 +110,14 @@
         <ImageButton
             android:id="@+id/pngHelpMenu"
             style="@style/DefaultBtn"
-            android:layout_width="137dp"
-            android:layout_height="match_parent"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             android:layout_weight="1"
             android:contentDescription="@string/descHelp"
-            android:onClick="viewHelp"
-            android:src="@drawable/helpme"
+            android:onClick="viewConfig"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gears"
             android:text="@string/btnHelp"
-            tools:srcCompat="@drawable/helpme" />
+            tools:srcCompat="@drawable/gears" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

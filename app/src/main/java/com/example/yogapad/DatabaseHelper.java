@@ -59,7 +59,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return numRows;
     }
 
-    public boolean updateContact (users c) {
+    public boolean updateUser (users c) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(PROFILE_COLUMN_NAME, c.get_name());
@@ -69,7 +69,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
-    public Integer deleteContact (Integer id) {
+    public Integer deleteUser (Integer id) {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(PROFILE_TABLE_NAME,
                 "id = ? ",
@@ -83,7 +83,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 null);
     }
 
-    public ArrayList<String> getAllContacts() {
+    public ArrayList<String> getAllUsers() {
         ArrayList<String> array_list = new ArrayList<String>();
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -96,7 +96,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return array_list;
     }
-    public ArrayList<users> getContactsList() {
+    public ArrayList<users> getUsersList() {
         ArrayList<users> list = new ArrayList<users>() ;
 
         SQLiteDatabase db = this.getReadableDatabase();

@@ -42,7 +42,7 @@
         android:layout_width="280dp"
         android:layout_height="65dp"
         android:text="@string/txtEmpty"
-        android:textColor="#E53935"
+        android:textColor="#D84315"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,8 +66,8 @@
         tools:srcCompat="@drawable/along" />
 
     <ScrollView
-        android:layout_width="399dp"
-        android:layout_height="200dp"
+        android:layout_width="338dp"
+        android:layout_height="207dp"
         android:layout_marginTop="29dp"
         android:layout_marginBottom="13dp"
         app:layout_constraintBottom_toTopOf="@+id/btnNewProf"

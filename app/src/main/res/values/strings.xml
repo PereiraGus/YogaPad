@@ -24,6 +24,8 @@
     <string name="btnPrevious">Anterior</string>
     <string name="btnNext">Próximo</string>
     <string name="btnCreate">Criar</string>
+    <string name="btnDeleteAll">Apagar todos os dados</string>
+    <string name="btnBackup">Fazer backup de todos os dados</string>
 
     <string name="btnPract">Clique aqui para
         encontrar uma escola de Yoga próxima
@@ -32,6 +34,9 @@
     <string name="btnTubePract">Clique aqui para
         ver uma aula de Yoga no YouTube
     </string>
+
+    <string name="rdbPt">Português</string>
+    <string name="rdbEng">Inglês</string>
 
     //Titulos
 
@@ -66,6 +71,8 @@
     <string name="subtitHot">Consulte a temperatura atual para ter uma sessão
     ideal de Hot Yoga</string>
 
+    <string name="titLang">Idioma</string>
+    <string name="titAbout">Sobre</string>
 
     //Textos
     <string name="txtY">Sim</string>
@@ -86,6 +93,7 @@
         , além de ser uma ótima maneira de exercitar
         o corpo!
     </string>
+
 
     <string name="txtFunds1">O Yoga, muito além de uma
         prática física, é uma filosofia milenar que
@@ -169,6 +177,14 @@
     </string>
     <string name="txtHotDesc5">A temperatura está muito alta em um nível perigoso!!!
     </string>
+
+    <string name="txtAbout1">Desenvolvido por Brenda S. Berzin e Gustavo P. Castro para
+    a matéria de Programação de Aplicativos Android do curso de Desenvolvimento de Sistemas,
+    ministrado na Etec Professor Basilides de Godoy
+    </string>
+    <string name="txtAbout2">Versão Alpha 2.0</string>
+    <string name="txtAbout3">Todos os direitos reservados - set. 2021</string>
+
     <string name="location_permission_denied">Permissão de localização negada, autorize a aplicação!</string>
     <string name="service_not_avaiable">Serviço Indisponível</string>
     <string name="invalid_lat_long">Coordenadas Inválidas</string>
@@ -185,6 +201,12 @@
     <string name="tstDelete">Deseja mesmo deletar este perfil?</string>
     <string name="tstDeleteConf">Perfil apagado com êxito</string>
     <string name="title_activity_all_profiles">activity_allProfiles</string>
+    <string name="tstDeleteY">Dados deletados com sucesso</string>
+
+    //Alerts
+    <string name="alertTitDelete">Deletar dados</string>
+    <string name="alertTxtDelete">Deseja deletar todos os dados?</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -192,6 +214,5 @@
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

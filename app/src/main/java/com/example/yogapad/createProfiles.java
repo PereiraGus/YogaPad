@@ -80,7 +80,7 @@ public class createProfiles extends AppCompatActivity {
             int Value = extras.getInt("id");
             if(Value>0){
 
-                if(dbprof.updateContact(new users( id_To_Update,name.getText().toString(),
+                if(dbprof.updateUser(new users( id_To_Update,name.getText().toString(),
                         loc.getText().toString(), descr.getText().toString()))){
                     Toast.makeText(getApplicationContext(), "Atualizado", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(),splash.class);

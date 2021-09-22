@@ -29,11 +29,6 @@ public class splash extends AppCompatActivity {
         updateList();
     }
 
-    public void openApp (View view){
-        Intent intent_open = new Intent(this, menu.class);
-        startActivity(intent_open);
-    }
-
     public void createProfile(View view)
     {
         Bundle dataBundle = new Bundle();
@@ -54,7 +49,7 @@ public class splash extends AppCompatActivity {
 
     public void updateList() {
 
-        ArrayList array_list = dbprof.getAllContacts();
+        ArrayList array_list = dbprof.getAllUsers();
 
         if (array_list.isEmpty()) {
             txtEmpty.setVisibility(View.VISIBLE);
@@ -71,8 +66,12 @@ public class splash extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 
-                    Intent intent = new Intent(getApplicationContext(), menu.class);
-                    startActivity(intent);
+                    int sessionID = arg2 + 1;
+
+                    Intent intent_start = new Intent(getApplicationContext(), menu.class);
+
+                    intent_start.putExtra("ID", sessionID);
+                    startActivity(intent_start);
                 }
             });
             obj.setVisibility(View.VISIBLE);
