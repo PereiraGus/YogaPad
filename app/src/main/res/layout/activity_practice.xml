@@ -46,7 +46,7 @@
                 android:layout_height="25dp" />
 
             <Button
-                android:id="@+id/btnMapPract"
+                android:id="@+id/btnFindSchool"
                 style="@style/DefaultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
