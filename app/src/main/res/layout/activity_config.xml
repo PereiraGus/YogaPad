@@ -26,8 +26,8 @@
             tools:ignore="TextContrastCheck,TextContrastCheck" />
 
         <ScrollView
-            android:layout_width="409dp"
-            android:layout_height="729dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="1dp"
             android:layout_marginLeft="1dp"
             android:layout_marginTop="1dp"
@@ -39,14 +39,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
 
                 <Button
                     android:id="@+id/btnHelpConfig"
                     style="@style/DefaultBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="viewHelp"
                     android:text="@string/btnHelp"
                     tools:ignore="TextContrastCheck" />
 
@@ -64,6 +67,7 @@
                         tools:ignore="TextContrastCheck" />
 
                     <RadioGroup
+                        android:id="@+id/rdgLang"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:baselineAligned="false"
@@ -95,6 +99,7 @@
                     style="@style/DefaultBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="deleteAll"
                     android:text="@string/btnDeleteAll"
                     tools:ignore="TextContrastCheck,TextContrastCheck" />
 
@@ -103,52 +108,45 @@
                     style="@style/DefaultBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="callBackup"
                     android:text="@string/btnBackup"
                     tools:ignore="TextContrastCheck" />
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/subAboutConfig"
+                    style="@style/SubtitleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/titAbout"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/txtAbout1"
+                    style="@style/DefaultTxt"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp">
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="@string/txtAbout1"
+                    android:textSize="25sp" />
 
-                    <TextView
-                        android:id="@+id/subAboutConfig"
-                        style="@style/SubtitleTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:text="@string/titAbout"
-                        tools:ignore="TextContrastCheck,TextContrastCheck" />
+                <TextView
+                    android:id="@+id/txtAbout2"
+                    style="@style/DefaultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txtAbout2"
+                    android:textSize="25sp" />
 
-                    <TextView
-                        android:id="@+id/txtAbout1"
-                        style="@style/DefaultTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:text="@string/txtAbout1"
-                        android:textSize="25sp" />
-
-                    <TextView
-                        android:id="@+id/txtAbout2"
-                        style="@style/DefaultTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/txtAbout2"
-                        android:textSize="25sp" />
-
-                    <TextView
-                        android:id="@+id/txtAbout3"
-                        style="@style/DefaultTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/txtAbout3"
-                        android:textSize="25sp" />
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtAbout3"
+                    style="@style/DefaultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txtAbout3"
+                    android:textSize="25sp" />
 
             </LinearLayout>
         </ScrollView>
