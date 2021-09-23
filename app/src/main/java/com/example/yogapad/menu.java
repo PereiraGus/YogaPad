@@ -42,9 +42,7 @@ public class menu extends AppCompatActivity {
     }
 
     public void viewProfile (View view){
-        int sessionID = getIntent().getIntExtra("ID", 1);
         Intent intent_profile = new Intent(this, profile.class);
-        intent_profile.putExtra("ID", sessionID);
         startActivity(intent_profile);
     }
 

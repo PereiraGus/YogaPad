@@ -2,7 +2,9 @@ package com.example.yogapad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -18,6 +20,8 @@ public class splash extends AppCompatActivity {
     DatabaseHelper dbprof;
     private TextView txtEmpty;
     private ListView obj;
+    public SharedPreferences prefID;
+    public static final String PREFF_NAME = "com.example.yogapad";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +71,12 @@ public class splash extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 
                     int sessionID = arg2 + 1;
+                    prefID = getSharedPreferences(PREFF_NAME, MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefID.edit();
+                    editor.putInt("sessionID", sessionID);
+                    editor.commit();
 
                     Intent intent_start = new Intent(getApplicationContext(), menu.class);
-
-                    intent_start.putExtra("ID", sessionID);
                     startActivity(intent_start);
                 }
             });

@@ -212,4 +212,6 @@
     <string name="alertTxtBackup">Selecione um local para fazer o backup</string>
     <string name="alertTxtBackupIn">Armazenamento Interno</string>
     <string name="alertTxtBackupEx">Armazenamento Externo</string>
+
+    <string name="sessionID" translatable="false">1</string>
 </resources>

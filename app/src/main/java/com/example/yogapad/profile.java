@@ -1,8 +1,11 @@
 package com.example.yogapad;
 
+import static com.example.yogapad.splash.PREFF_NAME;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -23,7 +26,8 @@ public class profile extends AppCompatActivity {
         txtLoc = (TextView) findViewById(R.id.txtLocProfile);
         txtDescr = (TextView) findViewById(R.id.txtDescrProfile);
 
-        int sessionID = getIntent().getIntExtra("ID", 1);
+        SharedPreferences prefID = getSharedPreferences(PREFF_NAME, 0);
+        int sessionID = prefID.getInt("sessionID", 0);
 
         dbusers = new DatabaseHelper(this);
 
