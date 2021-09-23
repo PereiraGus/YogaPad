@@ -124,7 +124,7 @@ public class practice extends AppCompatActivity implements FetchAddressTask.OnTa
         }
     }
 
-    private LocationRequest getLocationRequest(){
+    public LocationRequest getLocationRequest(){
         LocationRequest locationRequest = new LocationRequest();
         locationRequest.setInterval(10000);
         locationRequest.setFastestInterval(5000);
@@ -137,7 +137,7 @@ public class practice extends AppCompatActivity implements FetchAddressTask.OnTa
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_LOCATION_PERMISSION);
         }else{
             mTrackingLocation = true;
-            mFusedLocationClient.requestLocationUpdates(getLocationRequest, mLocationCallback, null);
+            mFusedLocationClient.requestLocationUpdates(getLocationRequest(), mLocationCallback, null);
             mFusedLocationClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
                 @Override
                 public void onComplete(@NonNull Task<Location> task) {
