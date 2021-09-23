@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">YogaPad</string>
+
+        //Descrições
+        <string name="descBg">Fundo de tela</string>
+    <string name="descBack">Voltar</string>
+        <string name="descProf">Perfil</string>
+        <string name="descHelp">Ajuda</string>
+        <string name="descProfPt">Foto de perfil</string>
+
+
+        //Texto de botões
+        <string name="btnNewProf">Novo perfil</string>
+
+        <string name="btnMenuI1">Fundamentos da Yoga</string>
+        <string name="btnMenuI2">Posições: Âsanas passivos</string>
+        <string name="btnMenuI3">Posições: Âsanas ativos</string>
+        <string name="btnMenuI4">Como praticar</string>
+        <string name="btnMenuI5">Yoga Quente</string>
+        <string name="btnProf">Perfil</string>
+        <string name="btnHelp">Ajuda</string>
+        <string name="btnBack">Voltar</string>
+        <string name="btnPrevious">Anterior</string>
+        <string name="btnNext">Próximo</string>
+        <string name="btnCreate">Criar</string>
+        <string name="btnDeleteAll">Apagar todos os dados</string>
+        <string name="btnBackup">Fazer backup de todos os dados</string>
+
+        <string name="btnPract">Clique aqui para
+        encontrar uma escola de Yoga próxima
+        de você
+    </string>
+        <string name="btnTubePract">Clique aqui para
+        ver uma aula de Yoga no YouTube
+    </string>
+
+        <string name="rdbPt">Português</string>
+        <string name="rdbEng">Inglês</string>
+
+        //Titulos
+
+        <string name="titProfile">Criar novo perfil</string>
+        <string name="legName">Nome</string>
+        <string name="legLoc">Localização</string>
+        <string name="legDescr">Descrição</string>
+
+    <string name="titFunds">Fundamentos</string>
+
+        <string name="titPract">Como praticar:</string>
+
+        <string name="titPass">Âsanas Passivas</string>
+    <string name="legPass1">Postura da tranquilidade</string>
+    <string name="legPass2">Postura do Diamante</string>
+    <string name="legPass3">Postura do Cisne</string>
+
+
+        <string name="titAct">Âsanas Ativas</string>
+    <string name="legAct1">Postura da serpente</string>
+    <string name="legAct2">Postura do joelho</string>
+
+    <string name="subtitHot">Consulte a temperatura atual para ter uma sessão
+    ideal de Hot Yoga</string>
+
+        <string name="titLang">Idioma</string>
+        <string name="titAbout">Sobre</string>
+
+        //Textos
+        <string name="txtY">Sim</string>
+        <string name="txtN">Não</string>
+        <string name="txtInd">Indisponível...</string>
+        <string name="txtRequired">Preencha todos os campos antes de continuar.</string>
+        <string name="txtEmpty">Não há dados...</string>
+        <string name="txtProfiles">Selecione um dos perfil abaixo ou crie um novo:</string>
+        <string name="txtName">Nome</string>
+        <string name="txtLoc">Localização</string>
+        <string name="txtDescr">Descrição</string>
+    <string name="txtDftDesc">Comecei a praticar Yoga
+        como hobbie e são inegáveis os benefícios a
+        longo prazo, mas você já se sente melhor após
+        cada prática. O Yoga me ajuda a lidar com a
+        ansiedade, trazendo tranquilidade e bem-estar
+        , além de ser uma ótima maneira de exercitar
+        o corpo!
+    </string>
+
+
+        <string name="txtFunds1">O Yoga, muito além de uma
+        prática física, é uma filosofia milenar que
+        busca o equilíbrio entre o corpo e a mente. É
+        por meio desta harmonia que podemos trazer
+        mais bem-estar e felicidade para nossas vidas.
+    </string>
+        <string name="txtFunds2">Durante as práticas,
+        que são extremamente benéficas para exercitar
+        o corpo, o intuito é de manter o foco na
+        respiração e a partir dela praticar nossa
+        capacidade de contemplação e reflexão, fazendo
+        do Yoga uma poderosa ferramenta de
+        autoconhecimento.
+    </string>
+
+        <string name="txtPract">Ao contrário do que muitos pensam,
+    você não precisa der super flexível ou ter um
+    ótimo equilíbrio para começar a praticar… A
+    filosofia do Yoga se baseia justamente na prática
+        como meio de evolução e é por isso que as
+     posições possuem variações para se adequar as
+     suas possibilidade individuais!
+    </string>
+
+        <string name="txtPass1">Postura para meditação e respiração.
+        Corpo relaxado, coluna ereta, mãos apoiadas nos joelhos
+        e olhos fechados.
+    </string>
+        <string name="txtPass2">Também é uma postura relaxada, mas
+        onde a presença é mais exercitada para manter a posição,
+        por isso é ótima para mentalizações.
+    </string>
+        <string name="txtPass3">É uma postura de recuperação muito
+        eficiente, por distender levemente a coluna vertebral,
+        irrigar o cérebro e ainda promover uma acomodação
+        perfeita dos órgãos.
+    </string>
+
+        <string name="txtAct1">Uma postura essencial que combate
+        problemas na coluna, no aparelho digestivo e melhora
+        o funcionamento do sistema nervoso, atuando também
+        no emocional.
+    </string>
+        <string name="txtAct2">Realiza a torção completa da coluna,
+        aliviando dores e atuando sobre bicos de papagaio e
+        outros males.
+    </string>
+        <string name="txtAct3">Realiza a flexão máxima da perna
+        sobre a articulação do joelho, mantendo a coluna
+        ereta, sendo uma ótima posição para exercitar o
+        equilíbrio.
+    </string>
+        <string name="txtHelp1">1: Botões que levam a conteúdos
+    relacionados a Yoga.
+    </string>
+        <string name="txtHelp2">2: Volta a tela de início.
+    </string>
+        <string name="txtHelp3">3: Visualiza o seu perfil.
+    </string>
+        <string name="txtHelp4">4: Uma barra de rolagem que
+        indica onde você está em relação ao conteúdo.
+    </string>
+        <string name="txtHelp5">5: Vai para o conteúdo anterior
+        à este na lista de menu.
+    </string>
+        <string name="txtHelp6">6: Volta ao menu principal.
+    </string>
+        <string name="txtHelp7">7: Vai para o conteúdo posterior
+        à este na lista de menu.
+    </string>
+        <string name="txtHotDesc1">A temperatura está baixa em um nível perigoso!!!
+    </string>
+        <string name="txtHotDesc2">A temperatura está muito fria para praticar qualquer
+        tipo de Yoga.
+    </string>
+        <string name="txtHotDesc3">A temperatura está muito fria para praticar Hot Yoga.
+        Tente a versão tradicional da modalidade.
+    </string>
+        <string name="txtHotDesc4">A temperatura está ideal para a prática de Hot Yoga.
+    </string>
+        <string name="txtHotDesc5">A temperatura está muito alta em um nível perigoso!!!
+    </string>
+
+        <string name="txtAbout1">Desenvolvido por Brenda S. Berzin e Gustavo P. Castro para
+    a matéria de Programação de Aplicativos Android do curso de Desenvolvimento de Sistemas,
+    ministrado na Etec Professor Basilides de Godoy
+    </string>
+        <string name="txtAbout2">Versão Alpha 2.0</string>
+        <string name="txtAbout3">Todos os direitos reservados - set. 2021</string>
+
+        <string name="location_permission_denied">Permissão de localização negada, autorize a aplicação!</string>
+        <string name="service_not_avaiable">Serviço Indisponível</string>
+        <string name="invalid_lat_long">Coordenadas Inválidas</string>
+        <string name="no_adress_found">Nenhum endereço encontrado</string>
+
+        //Hints
+        <string name="hintDesc">Escreva sua descrição…</string>
+        <string name="hintLogin">Digite um nome de usuário…</string>
+        <string name="hintTemperature">Não foi possível definir a temperatura do ambiente</string>
+        <string name="typeHere">Digite aqui...</string>
+
+        //Alerts e toasts
+        <string name="tstDeleteAll">Deseja mesmo deletar todos os perfis?</string>
+        <string name="tstDelete">Deseja mesmo deletar este perfil?</string>
+        <string name="tstDeleteConf">Perfil apagado com êxito</string>
+    <string name="tstDeleteY">Dados deletados com sucesso</string>
+
+        //Alerts
+        <string name="alertTitDelete">Deletar dados</string>
+        <string name="alertTxtDelete">Deseja deletar todos os dados?</string>
+
+        <string name="alertTitBackup">Realizar backup dos dados</string>
+        <string name="alertTxtBackup">Selecione um local para fazer o backup</string>
+        <string name="alertTxtBackupIn">Armazenamento Interno</string>
+        <string name="alertTxtBackupEx">Armazenamento Externo</string>
+</resources>

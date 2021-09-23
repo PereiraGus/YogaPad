@@ -3,7 +3,7 @@
 
     //Descrições
     <string name="descBg">Fundo de tela</string>
-    <string name="descLogo">Logo</string>
+    <string name="descLogo" translatable="false">Logo</string>
     <string name="descBack">Voltar</string>
     <string name="descProf">Perfil</string>
     <string name="descHelp">Ajuda</string>
@@ -45,29 +45,29 @@
     <string name="legLoc">Localização</string>
     <string name="legDescr">Descrição</string>
 
-    <string name="titDftUsername">Brenda Sanchez</string>
+    <string name="titDftUsername" translatable="false">Brenda Sanchez</string>
 
     <string name="titFunds">Fundamentos</string>
 
     <string name="titPract">Como praticar:</string>
 
     <string name="titPass">Âsanas Passivas</string>
-    <string name="subtitPass1">Samanâsana</string>
+    <string name="subtitPass1" translatable="false">Samanâsana</string>
     <string name="legPass1">Postura da tranquilidade</string>
-    <string name="subtitPass2">Vajrâsana</string>
+    <string name="subtitPass2" translatable="false">Vajrâsana</string>
     <string name="legPass2">Postura do Diamante</string>
-    <string name="subtitPass3">Swangâsana</string>
+    <string name="subtitPass3" translatable="false">Swangâsana</string>
     <string name="legPass3">Postura do Cisne</string>
 
 
     <string name="titAct">Âsanas Ativas</string>
-    <string name="subtitAct1">Bhujangâsana</string>
+    <string name="subtitAct1" translatable="false">Bhujangâsana</string>
     <string name="legAct1">Postura da serpente</string>
-    <string name="subtitAct2">Janurâsana</string>
+    <string name="subtitAct2" translatable="false">Janurâsana</string>
     <string name="legAct2">Postura do joelho</string>
-    <string name="subtitAct3">Matsyendrâsana</string>
+    <string name="subtitAct3" translatable="false">Matsyendrâsana</string>
 
-    <string name="titHot">Hot Yoga</string>
+    <string name="titHot" translatable="false">Hot Yoga</string>
     <string name="subtitHot">Consulte a temperatura atual para ter uma sessão
     ideal de Hot Yoga</string>
 
@@ -84,8 +84,8 @@
     <string name="txtName">Nome</string>
     <string name="txtLoc">Localização</string>
     <string name="txtDescr">Descrição</string>
-    <string name="txtDftLoc">São Paulo - Brasil</string>
-    <string name="txtDftDesc">Comecei a praticar Yoga
+    <string name="txtDftLoc" translatable="false">São Paulo - Brasil</string>
+    <string name="txtDftDesc" translatable="false">Comecei a praticar Yoga
         como hobbie e são inegáveis os benefícios a
         longo prazo, mas você já se sente melhor após
         cada prática. O Yoga me ajuda a lidar com a
@@ -95,13 +95,13 @@
     </string>
 
 
-    <string name="txtFunds1">O Yoga, muito além de uma
+    <string name="txtFunds1" translatable="false">O Yoga, muito além de uma
         prática física, é uma filosofia milenar que
         busca o equilíbrio entre o corpo e a mente. É
         por meio desta harmonia que podemos trazer
         mais bem-estar e felicidade para nossas vidas.
     </string>
-    <string name="txtFunds2">Durante as práticas,
+    <string name="txtFunds2" translatable="false">Durante as práticas,
         que são extremamente benéficas para exercitar
         o corpo, o intuito é de manter o foco na
         respiração e a partir dela praticar nossa
@@ -110,7 +110,7 @@
         autoconhecimento.
     </string>
 
-    <string name="txtPract">Ao contrário do que muitos pensam,
+    <string name="txtPract" translatable="false">Ao contrário do que muitos pensam,
     você não precisa der super flexível ou ter um
     ótimo equilíbrio para começar a praticar… A
     filosofia do Yoga se baseia justamente na prática
@@ -119,30 +119,30 @@
      suas possibilidade individuais!
     </string>
 
-    <string name="txtPass1">Postura para meditação e respiração.
+    <string name="txtPass1" translatable="false">Postura para meditação e respiração.
         Corpo relaxado, coluna ereta, mãos apoiadas nos joelhos
         e olhos fechados.
     </string>
-    <string name="txtPass2">Também é uma postura relaxada, mas
+    <string name="txtPass2" translatable="false">Também é uma postura relaxada, mas
         onde a presença é mais exercitada para manter a posição,
         por isso é ótima para mentalizações.
     </string>
-    <string name="txtPass3">É uma postura de recuperação muito
+    <string name="txtPass3" translatable="false">É uma postura de recuperação muito
         eficiente, por distender levemente a coluna vertebral,
         irrigar o cérebro e ainda promover uma acomodação
         perfeita dos órgãos.
     </string>
 
-    <string name="txtAct1">Uma postura essencial que combate
+    <string name="txtAct1" translatable="false">Uma postura essencial que combate
         problemas na coluna, no aparelho digestivo e melhora
         o funcionamento do sistema nervoso, atuando também
         no emocional.
     </string>
-    <string name="txtAct2">Realiza a torção completa da coluna,
+    <string name="txtAct2" translatable="false">Realiza a torção completa da coluna,
         aliviando dores e atuando sobre bicos de papagaio e
         outros males.
     </string>
-    <string name="txtAct3">Realiza a flexão máxima da perna
+    <string name="txtAct3" translatable="false">Realiza a flexão máxima da perna
         sobre a articulação do joelho, mantendo a coluna
         ereta, sendo uma ótima posição para exercitar o
         equilíbrio.
@@ -200,19 +200,15 @@
     <string name="tstDeleteAll">Deseja mesmo deletar todos os perfis?</string>
     <string name="tstDelete">Deseja mesmo deletar este perfil?</string>
     <string name="tstDeleteConf">Perfil apagado com êxito</string>
-    <string name="title_activity_all_profiles">activity_allProfiles</string>
+    <string name="title_activity_all_profiles" translatable="false">activity_allProfiles</string>
     <string name="tstDeleteY">Dados deletados com sucesso</string>
 
     //Alerts
     <string name="alertTitDelete">Deletar dados</string>
     <string name="alertTxtDelete">Deseja deletar todos os dados?</string>
 
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-
+    <string name="alertTitBackup">Realizar backup dos dados</string>
+    <string name="alertTxtBackup">Selecione um local para fazer o backup</string>
+    <string name="alertTxtBackupIn">Armazenamento Interno</string>
+    <string name="alertTxtBackupEx">Armazenamento Externo</string>
 </resources>

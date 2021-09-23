@@ -1,21 +1,20 @@
 package com.example.yogapad;
 
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.os.Build;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -28,18 +27,46 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class config extends AppCompatActivity {
     DatabaseHelper dbprof;
     users user;
     public static final String BACKUP_PROFILES = "backup_yogapad_users";
+    String lang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config);
         dbprof = new DatabaseHelper(this);
+        RadioButton rdtPt = findViewById(R.id.rdbPtConfig);
+        RadioButton rbtEng = findViewById(R.id.rdbEngConfig);
+        RadioGroup rdgLang;
+        String lang;
     }
+
+    /*private static Context changeLanguage(Context context, String lang)
+    {
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+        context = context.createConfigurationContext(config);
+        return context;
+    }
+
+    public void changePt(View view)
+    {
+        lang = "pt-rBR";
+        changeLanguage(this, lang);
+    }
+
+    public void changeEng(View view)
+    {
+        lang = "en-rUS";
+        changeLanguage(this, lang);
+    }*/
 
     public void viewHelp(View view)
     {
@@ -53,7 +80,7 @@ public class config extends AppCompatActivity {
         startActivity(intent_back);
     }
 
-    public void deleteAll()
+    public void deleteAll(View view)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(R.string.alertTxtDelete)
@@ -80,6 +107,29 @@ public class config extends AppCompatActivity {
         alert.show();
     }
 
+    public void callBackup(View view)
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.alertTxtBackup)
+                .setPositiveButton(R.string.alertTxtBackupIn, new DialogInterface.OnClickListener()
+                {
+                    public void onClick(DialogInterface dialog, int id)
+                    {
+                        backupIn();
+                    }
+                })
+                .setNegativeButton(R.string.alertTxtBackupEx, new DialogInterface.OnClickListener()
+                {
+                    public void onClick(DialogInterface dialog, int id)
+                    {
+                        backupEx();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.setTitle(R.string.alertTitBackup);
+        alert.show();
+    }
+
     public boolean backupIn()
     {
         try {
@@ -98,7 +148,6 @@ public class config extends AppCompatActivity {
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public void backupEx()
     {
 
@@ -130,18 +179,18 @@ public class config extends AppCompatActivity {
                         subDir.mkdirs();
                     }
                     String name= "backup_"+ LocalDateTime.now() + ".json";
-                    File arquivo = new File(subDir, name);
+                    File archive = new File(subDir, name);
 
-                    FileWriter fileWriter = new FileWriter(arquivo);
+                    FileWriter fileWriter = new FileWriter(archive);
                     BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
                     bufferedWriter.write(jLista.toString());
                     bufferedWriter.close();
-                    Toast.makeText(getApplicationContext(), arquivo.getAbsolutePath(),
+                    Toast.makeText(getApplicationContext(), "Criado em: " + archive.getAbsolutePath(),
                             Toast.LENGTH_SHORT).show();
 
                 } catch (IOException e) {
                     e.printStackTrace();
-                    Toast.makeText(getApplicationContext(), e.getMessage(),
+                    Toast.makeText(getApplicationContext(), "Erro '" + e.getMessage() + "'",
                             Toast.LENGTH_SHORT).show();
                 }
             }
@@ -149,7 +198,6 @@ public class config extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), "Sem acesso ao armazenamento externo.",
                         Toast.LENGTH_SHORT).show();
-
             }
         }
     }
