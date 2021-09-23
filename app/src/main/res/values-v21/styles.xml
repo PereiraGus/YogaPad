@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DefaultRdb" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#DF5E35</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:buttonTint">#DF5E35</item>
+    </style>
+</resources>

@@ -45,7 +45,6 @@
             android:layout_height="177dp"
             android:layout_marginTop="183dp"
             android:layout_marginBottom="100dp"
-            android:text="@string/txtInd"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,15 +57,14 @@
             android:id="@+id/imgTherm"
             android:layout_width="202dp"
             android:layout_height="191dp"
-            android:src="@drawable/thermometer"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.933"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.494"
-            app:srcCompat="@drawable/helpme"
-            tools:srcCompat="@drawable/helpme" />
+            app:srcCompat="@color/defaultCol"
+            />
 
         <ImageView
             android:id="@+id/imgTemp"
@@ -75,16 +73,14 @@
             android:layout_marginTop="33dp"
             android:layout_marginEnd="71dp"
             android:layout_marginRight="71dp"
-            android:src="@drawable/ice"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.136"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.538"
-            app:srcCompat="@drawable/helpme"
-            tools:srcCompat="@drawable/helpme" />
-
+            app:srcCompat="@color/defaultCol"
+        />
         <TextView
             android:id="@+id/txtTempDesc"
             style="@style/LegendTxt"
