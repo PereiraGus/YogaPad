@@ -189,6 +189,7 @@
     <string name="service_not_avaiable">Serviço Indisponível</string>
     <string name="invalid_lat_long">Coordenadas Inválidas</string>
     <string name="no_adress_found">Nenhum endereço encontrado</string>
+    <string name="cancel">Cancelar Pesquisa</string>
 
     //Hints
     <string name="hintDesc">Escreva sua descrição…</string>
