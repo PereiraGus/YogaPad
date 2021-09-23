@@ -2,21 +2,15 @@ package com.example.yogapad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class createProfiles extends AppCompatActivity {
-    int from_Where_I_Am_Coming = 0;
     private DatabaseHelper dbprof ;
 
     TextView name ;
@@ -72,6 +66,13 @@ public class createProfiles extends AppCompatActivity {
                 descr.setClickable(false);
             }
         }
+
+        if(savedInstanceState != null)
+        {
+            name.setText(savedInstanceState.getString("NAME"));
+            loc.setText(savedInstanceState.getString("LOC"));
+            descr.setText(savedInstanceState.getString("DESCR"));
+        }
     }
 
     public void run(View view) {
@@ -101,5 +102,13 @@ public class createProfiles extends AppCompatActivity {
                 startActivity(intent);
             }
         }
+    }
+
+    protected void onSavedInstance(Bundle outState)
+    {
+        outState.putString("NAME",(String) name.getText());
+        outState.putString("LOC",(String) loc.getText());
+        outState.putString("DESCR",(String) descr.getText());
+        super.onSaveInstanceState(outState);
     }
 }

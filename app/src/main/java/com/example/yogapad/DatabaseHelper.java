@@ -3,7 +3,6 @@ package com.example.yogapad;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
@@ -49,14 +48,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Cursor getData(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res =  db.rawQuery( "select * from tbprofiles where id="+id+"", null );
-        return res;
-    }
-
-    public int numberOfRows(){
-        SQLiteDatabase db = this.getReadableDatabase();
-        int numRows = (int) DatabaseUtils.queryNumEntries(db, PROFILE_TABLE_NAME);
-        return numRows;
+        return db.rawQuery( "select * from tbprofiles where id="+id+"", null );
     }
 
     public boolean updateUser (users c) {
@@ -69,41 +61,34 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
-    public Integer deleteUser (Integer id) {
+    public void deleteAll () {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(PROFILE_TABLE_NAME,
-                "id = ? ",
-                new String[] { Integer.toString(id) });
-    }
-
-    public Integer deleteAll () {
-        SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(PROFILE_TABLE_NAME,
+        db.delete(PROFILE_TABLE_NAME,
                 null,
                 null);
     }
 
     public ArrayList<String> getAllUsers() {
-        ArrayList<String> array_list = new ArrayList<String>();
+        ArrayList<String> array_list = new ArrayList<>();
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res =  db.rawQuery( "select * from tbprofiles", null );
         res.moveToFirst();
 
-        while(res.isAfterLast() == false){
+        while(!res.isAfterLast()){
             array_list.add(res.getString(res.getColumnIndex(PROFILE_COLUMN_NAME)));
             res.moveToNext();
         }
         return array_list;
     }
     public ArrayList<users> getUsersList() {
-        ArrayList<users> list = new ArrayList<users>() ;
+        ArrayList<users> list = new ArrayList<>() ;
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res =  db.rawQuery( "select * from tbprofiles", null );
         res.moveToFirst();
 
-        while(res.isAfterLast() == false){
+        while(!res.isAfterLast()){
             users pfm = new users();
             pfm.set_id(Integer.parseInt(res.getString(res.getColumnIndex(PROFILE_COLUMN_ID))));
             pfm.set_name(res.getString(res.getColumnIndex(PROFILE_COLUMN_NAME)));

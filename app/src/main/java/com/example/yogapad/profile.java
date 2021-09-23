@@ -16,20 +16,19 @@ public class profile extends AppCompatActivity {
     TextView txtName;
     TextView txtLoc;
     TextView txtDescr;
-    private DatabaseHelper dbusers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        txtName = (TextView) findViewById(R.id.txtNameProfile);
-        txtLoc = (TextView) findViewById(R.id.txtLocProfile);
-        txtDescr = (TextView) findViewById(R.id.txtDescrProfile);
+        txtName = findViewById(R.id.txtNameProfile);
+        txtLoc = findViewById(R.id.txtLocProfile);
+        txtDescr = findViewById(R.id.txtDescrProfile);
 
         SharedPreferences prefID = getSharedPreferences(PREFF_NAME, 0);
         int sessionID = prefID.getInt("sessionID", 0);
 
-        dbusers = new DatabaseHelper(this);
+        DatabaseHelper dbusers = new DatabaseHelper(this);
 
         users user = new users();
 

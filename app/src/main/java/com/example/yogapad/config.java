@@ -141,9 +141,13 @@ public class config extends AppCompatActivity {
             oos.writeObject(c);
             oos.close();
             fos.close();
+            Toast.makeText(getApplicationContext(), "Backup concluído com sucesso.",
+                    Toast.LENGTH_SHORT).show();
             return  true;
         } catch (IOException e) {
             e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "Não foi possível criar o backup. Erro: " + e,
+                    Toast.LENGTH_SHORT).show();
             return false;
         }
     }
@@ -170,27 +174,23 @@ public class config extends AppCompatActivity {
                         jLista.put( c.getJSONObject());
                     }
 
-                    File dir = Environment.getExternalStorageDirectory();
-                    if (!dir.exists()) {
-                        dir.mkdirs();
-                    }
-                    File subDir = new File (dir, "YogaPad");
-                    if (!subDir.exists()) {
-                        subDir.mkdirs();
-                    }
+                    File root = android.os.Environment.getExternalStorageDirectory();
+                    File dir = new File(root.getAbsolutePath() + "/downloads");
+                    //dir.mkdirs();
+
                     String name= "backup_"+ LocalDateTime.now() + ".json";
-                    File archive = new File(subDir, name);
+                    File archive = new File(dir, name);
 
                     FileWriter fileWriter = new FileWriter(archive);
                     BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
                     bufferedWriter.write(jLista.toString());
                     bufferedWriter.close();
-                    Toast.makeText(getApplicationContext(), "Criado em: " + archive.getAbsolutePath(),
+                    Toast.makeText(getApplicationContext(), "Backup criado em: " + archive.getAbsolutePath(),
                             Toast.LENGTH_SHORT).show();
 
                 } catch (IOException e) {
                     e.printStackTrace();
-                    Toast.makeText(getApplicationContext(), "Erro '" + e.getMessage() + "'",
+                    Toast.makeText(getApplicationContext(), "Não foi possível criar o backup. Erro: " + e,
                             Toast.LENGTH_SHORT).show();
                 }
             }
