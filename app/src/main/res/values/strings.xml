@@ -85,13 +85,7 @@
     <string name="txtLoc">Localização</string>
     <string name="txtDescr">Descrição</string>
     <string name="txtDftLoc" translatable="false">São Paulo - Brasil</string>
-    <string name="txtDftDesc" translatable="false">Comecei a praticar Yoga
-        como hobbie e são inegáveis os benefícios a
-        longo prazo, mas você já se sente melhor após
-        cada prática. O Yoga me ajuda a lidar com a
-        ansiedade, trazendo tranquilidade e bem-estar
-        , além de ser uma ótima maneira de exercitar
-        o corpo!
+    <string name="txtDftDesc" translatable="false">Comecei a praticar Yoga como hobbie e são inegáveis os benefícios a longo prazo, mas você já se sente melhor após cada prática. O Yoga me ajuda a lidar com a ansiedade, trazendo tranquilidade e bem-estar, além de ser uma ótima maneira de exercitar o corpo!
     </string>
 
 

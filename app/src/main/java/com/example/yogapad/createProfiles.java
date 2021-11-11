@@ -79,18 +79,7 @@ public class createProfiles extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if(extras !=null) {
             int Value = extras.getInt("id");
-            if(Value>0){
-
-                if(dbprof.updateUser(new users( id_To_Update,name.getText().toString(),
-                        loc.getText().toString(), descr.getText().toString()))){
-                    Toast.makeText(getApplicationContext(), "Atualizado", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),splash.class);
-                    startActivity(intent);
-                } else{
-                    Toast.makeText(getApplicationContext(), "Não Atualizado", Toast.LENGTH_SHORT).show();
-                }
-            } else{
-                if(dbprof.insertContact(new users(name.getText().toString(), loc.getText().toString(),
+                if(dbprof.insertUser(new users(name.getText().toString(), loc.getText().toString(),
                         descr.getText().toString()))){
                     Toast.makeText(getApplicationContext(), "Perfil criado",
                             Toast.LENGTH_SHORT).show();
@@ -100,7 +89,6 @@ public class createProfiles extends AppCompatActivity {
                 }
                 Intent intent = new Intent(getApplicationContext(),splash.class);
                 startActivity(intent);
-            }
         }
     }
 

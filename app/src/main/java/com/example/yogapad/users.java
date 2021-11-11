@@ -13,12 +13,6 @@ public class users implements Serializable {
 
     public users(){ }
 
-    public users(int id, String name)
-    {
-        this.set_id(id);
-        this.set_name(name);
-    }
-
     public users(String name, String loc, String descr)
     {
         this.set_name(name);

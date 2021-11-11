@@ -43,13 +43,6 @@ public class splash extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public boolean onKeyDown(int keycode, KeyEvent event) {
-        if (keycode == KeyEvent.KEYCODE_BACK) {
-            moveTaskToBack(true);
-        }
-        return super.onKeyDown(keycode, event);
-    }
-
     public void updateList() {
 
         ArrayList array_list = dbprof.getAllUsers();

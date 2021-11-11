@@ -36,7 +36,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertContact (users c) {
+    public boolean insertUser (users c) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(PROFILE_COLUMN_NAME, c.get_name());
@@ -49,16 +49,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public Cursor getData(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery( "select * from tbprofiles where id="+id+"", null );
-    }
-
-    public boolean updateUser (users c) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(PROFILE_COLUMN_NAME, c.get_name());
-        contentValues.put(PROFILE_COLUMN_LOC, c.get_loc());
-        contentValues.put(PROFILE_COLUMN_DESCR, c.get_descr());
-        db.update(PROFILE_TABLE_NAME, contentValues, "id = ? ", new String[] { Integer.toString(c.get_id()) } );
-        return true;
     }
 
     public void deleteAll () {
